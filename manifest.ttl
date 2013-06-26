@@ -1,0 +1,132 @@
+# N-Quads Syntax tests
+
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix mf: <http://www.w3.org/2001/sw/DataAccess/tests/test-manifest#> .
+@prefix qt:     <http://www.w3.org/2001/sw/DataAccess/tests/test-query#> .
+
+@prefix rdft:   <http://www.w3.org/ns/rdftest#> .
+
+<>  a mf:Manifest ;
+    rdfs:comment "N-Quads tests" ;
+    mf:entries
+    (
+    <#nq-syntax-uri-01.nq>
+    <#nq-syntax-uri-02.nq>
+    <#nq-syntax-uri-03.nq>
+    <#nq-syntax-uri-04.nq>
+    <#nq-syntax-uri-05.nq>
+    <#nq-syntax-uri-06.nq>
+    <#nq-syntax-bnode-01.nq>
+    <#nq-syntax-bnode-02.nq>
+    <#nq-syntax-bnode-03.nq>
+    <#nq-syntax-bnode-04.nq>
+    <#nq-syntax-bnode-05.nq>
+    <#nq-syntax-bnode-06.nq>
+    <#nq-syntax-bad-literal-01.nq>
+    <#nq-syntax-bad-literal-02.nq>
+    <#nq-syntax-bad-literal-03.nq>
+    <#nq-syntax-bad-uri-01.nq>
+    <#nq-syntax-bad-quint-01.nq>
+    ) .
+
+<#nq-syntax-uri-01.nq> a rdft:TestNQuadsPositiveSyntax ;
+   mf:name    "nq-syntax-uri-01" ;
+   rdfs:comment "URI graph with URI triple" ;
+   mf:action    <nq-syntax-uri-01.nq> ;
+   .
+
+<#nq-syntax-uri-02.nq> a rdft:TestNQuadsPositiveSyntax ;
+   mf:name    "nq-syntax-uri-02" ;
+   rdfs:comment "URI graph with BNode subject" ;
+   mf:action    <nq-syntax-uri-02.nq> ;
+   .
+
+<#nq-syntax-uri-03.nq> a rdft:TestNQuadsPositiveSyntax ;
+   mf:name    "nq-syntax-uri-03" ;
+   rdfs:comment "URI graph with BNode object" ;
+   mf:action    <nq-syntax-uri-03.nq> ;
+   .
+
+<#nq-syntax-uri-04.nq> a rdft:TestNQuadsPositiveSyntax ;
+   mf:name    "nq-syntax-uri-04" ;
+   rdfs:comment "URI graph with simple literal" ;
+   mf:action    <nq-syntax-uri-04.nq> ;
+   .
+
+<#nq-syntax-uri-05.nq> a rdft:TestNQuadsPositiveSyntax ;
+   mf:name    "nq-syntax-uri-05" ;
+   rdfs:comment "URI graph with language tagged literal" ;
+   mf:action    <nq-syntax-uri-05.nq> ;
+   .
+
+<#nq-syntax-uri-06.nq> a rdft:TestNQuadsPositiveSyntax ;
+   mf:name    "nq-syntax-uri-06" ;
+   rdfs:comment "URI graph with datatyped literal" ;
+   mf:action    <nq-syntax-uri-06.nq> ;
+   .
+
+<#nq-syntax-bnode-01.nq> a rdft:TestNQuadsPositiveSyntax ;
+   mf:name    "nq-syntax-bnode-01" ;
+   rdfs:comment "BNode graph with URI triple" ;
+   mf:action    <nq-syntax-bnode-01.nq> ;
+   .
+
+<#nq-syntax-bnode-02.nq> a rdft:TestNQuadsPositiveSyntax ;
+   mf:name    "nq-syntax-bnode-02" ;
+   rdfs:comment "BNode graph with BNode subject" ;
+   mf:action    <nq-syntax-bnode-02.nq> ;
+   .
+
+<#nq-syntax-bnode-03.nq> a rdft:TestNQuadsPositiveSyntax ;
+   mf:name    "nq-syntax-bnode-03" ;
+   rdfs:comment "BNode graph with BNode object" ;
+   mf:action    <nq-syntax-bnode-03.nq> ;
+   .
+
+<#nq-syntax-bnode-04.nq> a rdft:TestNQuadsPositiveSyntax ;
+   mf:name    "nq-syntax-bnode-04" ;
+   rdfs:comment "BNode graph with simple literal" ;
+   mf:action    <nq-syntax-bnode-04.nq> ;
+   .
+
+<#nq-syntax-bnode-05.nq> a rdft:TestNQuadsPositiveSyntax ;
+   mf:name    "nq-syntax-bnode-05" ;
+   rdfs:comment "BNode graph with language tagged literal" ;
+   mf:action    <nq-syntax-bnode-05.nq> ;
+   .
+
+<#nq-syntax-bnode-06.nq> a rdft:TestNQuadsPositiveSyntax ;
+   mf:name    "nq-syntax-bnode-06" ;
+   rdfs:comment "BNode graph with datatyped literal" ;
+   mf:action    <nq-syntax-bnode-06.nq> ;
+   .
+
+<#nq-syntax-bad-literal-01.nq> a rdft:TestNQuadsNegativeSyntax ;
+   mf:name    "nt-syntax-bad-literal-01" ;
+   rdfs:comment "Graph name may not be a simple literal (negative test)" ;
+   mf:action    <nt-syntax-bad-literal-01.nt> ;
+   .
+
+<#nq-syntax-bad-literal-02.nq> a rdft:TestNQuadsNegativeSyntax ;
+   mf:name    "nt-syntax-bad-literal-02" ;
+   rdfs:comment "Graph name may not be a language tagged literal (negative test)" ;
+   mf:action    <nt-syntax-bad-literal-02.nt> ;
+   .
+
+<#nq-syntax-bad-literal-03.nq> a rdft:TestNQuadsNegativeSyntax ;
+   mf:name    "nt-syntax-bad-literal-03" ;
+   rdfs:comment "Graph name may not be a datatyped literal (negative test)" ;
+   mf:action    <nt-syntax-bad-literal-03.nt> ;
+   .
+
+<#nq-syntax-bad-uri-01.nq> a rdft:TestNQuadsNegativeSyntax ;
+   mf:name    "nt-syntax-bad-uri-01" ;
+   rdfs:comment "Graph name URI must be absolute (negative test)" ;
+   mf:action    <nt-syntax-bad-uri-01.nt> ;
+   .
+
+<#nq-syntax-bad-quint-01.nq> a rdft:TestNQuadsNegativeSyntax ;
+   mf:name    "nt-syntax-bad-quint-01" ;
+   rdfs:comment "N-Quads does not have a fifth element (negative test)" ;
+   mf:action    <nt-syntax-bad-quint-01.nt> ;
+   .
