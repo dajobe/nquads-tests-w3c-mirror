@@ -104,29 +104,29 @@
 <#nq-syntax-bad-literal-01.nq> a rdft:TestNQuadsNegativeSyntax ;
    mf:name    "nq-syntax-bad-literal-01" ;
    rdfs:comment "Graph name may not be a simple literal (negative test)" ;
-   mf:action    <nq-syntax-bad-literal-01.nt> ;
+   mf:action    <nq-syntax-bad-literal-01.nq> ;
    .
 
 <#nq-syntax-bad-literal-02.nq> a rdft:TestNQuadsNegativeSyntax ;
    mf:name    "nq-syntax-bad-literal-02" ;
    rdfs:comment "Graph name may not be a language tagged literal (negative test)" ;
-   mf:action    <nq-syntax-bad-literal-02.nt> ;
+   mf:action    <nq-syntax-bad-literal-02.nq> ;
    .
 
 <#nq-syntax-bad-literal-03.nq> a rdft:TestNQuadsNegativeSyntax ;
    mf:name    "nq-syntax-bad-literal-03" ;
    rdfs:comment "Graph name may not be a datatyped literal (negative test)" ;
-   mf:action    <nq-syntax-bad-literal-03.nt> ;
+   mf:action    <nq-syntax-bad-literal-03.nq> ;
    .
 
 <#nq-syntax-bad-uri-01.nq> a rdft:TestNQuadsNegativeSyntax ;
    mf:name    "nq-syntax-bad-uri-01" ;
    rdfs:comment "Graph name URI must be absolute (negative test)" ;
-   mf:action    <nq-syntax-bad-uri-01.nt> ;
+   mf:action    <nq-syntax-bad-uri-01.nq> ;
    .
 
 <#nq-syntax-bad-quint-01.nq> a rdft:TestNQuadsNegativeSyntax ;
-   mf:name    "nt-syntax-bad-quint-01" ;
+   mf:name    "nq-syntax-bad-quint-01" ;
    rdfs:comment "N-Quads does not have a fifth element (negative test)" ;
-   mf:action    <nt-syntax-bad-quint-01.nt> ;
+   mf:action    <nq-syntax-bad-quint-01.nq> ;
    .
