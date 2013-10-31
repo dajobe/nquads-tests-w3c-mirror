@@ -7,7 +7,7 @@
 @prefix rdft:   <http://www.w3.org/ns/rdftest#> .
 
 <>  a mf:Manifest ;
-    rdfs:comment "N-Quads tests" ;
+    mf:name "N-Quads tests" ;
     mf:entries
     (
     <#nq-syntax-uri-01.nq>
