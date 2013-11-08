@@ -8,10 +8,7 @@ This test suite contains two kinds of tests:
   file with at least one syntax error.
 
 The manifest.ttl file in this directory lists tests in the
-RDF WG's N-Quads test suite. Additionally, an N-Quads processor
-also must successfulliy parse all positive syntax tests in the N-Triples test manifest
-<http://www.w3.org/2013/NTriplesTests/manifest.ttl>.
-Each test is one of the above tests. All
+RDF WG's N-Quads test suite. All
 tests have a name (mf:name) and an input (mf:action).
 
 • An implementation passes a positive syntax test if it parses the
