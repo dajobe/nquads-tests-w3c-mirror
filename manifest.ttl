@@ -84,11 +84,6 @@
     <#literal_with_CARRIAGE_RETURN>
     <#literal_with_CHARACTER_TABULATION>
     <#literal_with_dquote>
-    <#literal_with_escaped_BACKSPACE>
-    <#literal_with_escaped_CARRIAGE_RETURN>
-    <#literal_with_escaped_CHARACTER_TABULATION>
-    <#literal_with_escaped_FORM_FEED>
-    <#literal_with_escaped_LINE_FEED>
     <#literal_with_FORM_FEED>
     <#literal_with_LINE_FEED>
     <#literal_with_numeric_escape4>
@@ -597,41 +592,6 @@
    rdfs:comment "literal with REVERSE SOLIDUS" ;
    rdft:approval rdft:Proposed ;
    mf:action    <literal_with_REVERSE_SOLIDUS.nq> ;
-   .
-
-<#literal_with_escaped_CHARACTER_TABULATION> a rdft:TestNQuadsPositiveSyntax ;
-   mf:name      "literal_with_escaped_CHARACTER_TABULATION" ;
-   rdfs:comment "literal with escaped CHARACTER TABULATION" ;
-   rdft:approval rdft:Proposed ;
-   mf:action    <literal_with_CHARACTER_TABULATION.nq> ;
-   .
-
-<#literal_with_escaped_BACKSPACE> a rdft:TestNQuadsPositiveSyntax ;
-   mf:name      "literal_with_escaped_BACKSPACE" ;
-   rdfs:comment "literal with escaped BACKSPACE" ;
-   rdft:approval rdft:Proposed ;
-   mf:action    <literal_with_BACKSPACE.nq> ;
-   .
-
-<#literal_with_escaped_LINE_FEED> a rdft:TestNQuadsPositiveSyntax ;
-   mf:name      "literal_with_escaped_LINE_FEED" ;
-   rdfs:comment "literal with escaped LINE FEED" ;
-   rdft:approval rdft:Proposed ;
-   mf:action    <literal_with_LINE_FEED.nq> ;
-   .
-
-<#literal_with_escaped_CARRIAGE_RETURN> a rdft:TestNQuadsPositiveSyntax ;
-   mf:name      "literal_with_escaped_CARRIAGE_RETURN" ;
-   rdfs:comment "literal with escaped CARRIAGE RETURN" ;
-   rdft:approval rdft:Proposed ;
-   mf:action    <literal_with_CARRIAGE_RETURN.nq> ;
-   .
-
-<#literal_with_escaped_FORM_FEED> a rdft:TestNQuadsPositiveSyntax ;
-   mf:name      "literal_with_escaped_FORM_FEED" ;
-   rdfs:comment "literal with escaped FORM FEED" ;
-   rdft:approval rdft:Proposed ;
-   mf:action    <literal_with_FORM_FEED.nq> ;
    .
 
 <#literal_with_numeric_escape4> a rdft:TestNQuadsPositiveSyntax ;
