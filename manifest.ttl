@@ -97,8 +97,7 @@
     <#literal_with_REVERSE_SOLIDUS2>
     <#literal_with_squote>
     <#literal_with_UTF8_boundaries>
-    <#langtagged_non_LONG>
-    <#langtagged_LONG>
+    <#langtagged_string>
     <#lantag_with_subtag>
     <#minimal_whitespace>
     ) .
@@ -649,18 +648,11 @@
    mf:action    <literal_with_numeric_escape8.nq> ;
    .
 
-<#langtagged_non_LONG> a rdft:TestNQuadsPositiveSyntax ;
-   mf:name      "langtagged_non_LONG" ;
-   rdfs:comment "langtagged non-LONG \"x\"@en" ;
+<#langtagged_string> a rdft:TestNQuadsPositiveSyntax ;
+   mf:name      "langtagged_string" ;
+   rdfs:comment "langtagged string \"x\"@en" ;
    rdft:approval rdft:Proposed ;
-   mf:action    <langtagged_non_LONG.nq> ;
-   .
-
-<#langtagged_LONG> a rdft:TestNQuadsPositiveSyntax ;
-   mf:name      "langtagged_LONG" ;
-   rdfs:comment "langtagged LONG \"\"\"x\"\"\"@en" ;
-   rdft:approval rdft:Proposed ;
-   mf:action    <langtagged_non_LONG.nq> ;
+   mf:action    <langtagged_string.nq> ;
    .
 
 <#lantag_with_subtag> a rdft:TestNQuadsPositiveSyntax ;
