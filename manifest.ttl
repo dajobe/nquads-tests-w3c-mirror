@@ -646,7 +646,7 @@
    mf:name      "literal_with_numeric_escape8" ;
    rdfs:comment "literal with numeric escape8 \\U" ;
    rdft:approval rdft:Proposed ;
-   mf:action    <literal_with_numeric_escape4.nq> ;
+   mf:action    <literal_with_numeric_escape8.nq> ;
    .
 
 <#langtagged_non_LONG> a rdft:TestNQuadsPositiveSyntax ;
